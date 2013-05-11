@@ -15,4 +15,15 @@ var urlShortener = {
 	}
 }
 
-module.exports = urlShortener;
+// $('#submit').click{
+
+// }
+
+var shortenNow = function(){
+	var url = document.getElementById('url-input').value;
+	urlShortener.shorten();
+
+	document.getElementById('short-url').innerHTML = urlShortener.urlId;
+};
+
+// module.exports = urlShortener;
